@@ -1,5 +1,7 @@
 const puppeteer = require('puppeteer')
 
+
+
 async function mlb(){
     const browser = await puppeteer.launch();
     const page = await browser.newPage()
@@ -88,5 +90,10 @@ function findAverage(cleanNumbers){
 
 mlb()
 
+// async function getApiData(){
+//     const mlbResult = await fetch("")
+//     const json = await apiResult.json()
+//     return json;
+// }
 
 
